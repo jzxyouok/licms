@@ -269,6 +269,7 @@ right: initial !important;}
 			closest_ul.find("> .open > .submenu").each(function() {
 						if (this != closest_a_next && !$(this.parentNode).hasClass("active")) {
 							$(this).slideUp(150).parent().removeClass("open");
+							$(this).slideUp(150).prev().find("b").removeClass("fa-angle-down").addClass("fa-angle-right");
 						}
 			});
 		}
@@ -276,6 +277,7 @@ right: initial !important;}
 			return false;
 		}
 		$(closest_a_next).slideToggle(150).parent().toggleClass("open");
+		$(closest_a_next).prev().find("b").toggleClass("fa-angle-down fa-angle-right");
 		return false;
 	});
 	</script>
