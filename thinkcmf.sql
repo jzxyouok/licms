@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50540
 File Encoding         : 65001
 
-Date: 2016-02-28 20:35:16
+Date: 2016-02-28 22:30:40
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -315,24 +315,35 @@ CREATE TABLE `cmf_guestbook` (
   `email` varchar(100) NOT NULL COMMENT '留言者邮箱',
   `title` varchar(255) DEFAULT NULL COMMENT '留言标题',
   `age` int(11) NOT NULL,
+  `job` varchar(100) NOT NULL,
+  `degree` varchar(100) NOT NULL,
   `sex` varchar(100) NOT NULL,
   `msg` text NOT NULL COMMENT '留言内容',
   `createtime` datetime NOT NULL COMMENT '留言时间',
   `status` smallint(2) NOT NULL DEFAULT '1' COMMENT '留言状态，1：正常，0：删除',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COMMENT='留言表';
+) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 COMMENT='留言表';
 
 -- ----------------------------
 -- Records of cmf_guestbook
 -- ----------------------------
-INSERT INTO `cmf_guestbook` VALUES ('1', 'dsfsdfsd', 'sdfsdfsdf@qq.com', null, '0', '', 'sdfsadfsadf', '2016-02-27 11:03:54', '1');
-INSERT INTO `cmf_guestbook` VALUES ('2', '123123', '123123@qq.com', null, '0', '', '第三方士大夫撒旦法', '2016-02-28 12:45:31', '1');
-INSERT INTO `cmf_guestbook` VALUES ('4', '123123', '12@qq.com', null, '12', '', '沙发上对方的身份', '2016-02-28 13:21:49', '1');
-INSERT INTO `cmf_guestbook` VALUES ('5', '12213', 'sd@qq.com', null, '15', '', 'sdfsdf', '2016-02-28 17:27:43', '1');
-INSERT INTO `cmf_guestbook` VALUES ('6', 'dsf', '111@qq.com', null, '23', '', 'refsdf', '2016-02-28 18:11:11', '1');
-INSERT INTO `cmf_guestbook` VALUES ('7', '21312', '123123@qq.com', null, '124', '', '啥的发送到', '2016-02-28 18:20:42', '1');
-INSERT INTO `cmf_guestbook` VALUES ('8', '123', '11@qq.com', null, '55', '', '啥的发送到', '2016-02-28 18:24:08', '1');
-INSERT INTO `cmf_guestbook` VALUES ('9', '1212', '2@qq.com', null, '88', '', '水电费水电费', '2016-02-28 18:36:02', '1');
+INSERT INTO `cmf_guestbook` VALUES ('1', 'dsfsdfsd', 'sdfsdfsdf@qq.com', null, '0', '', '', '', 'sdfsadfsadf', '2016-02-27 11:03:54', '1');
+INSERT INTO `cmf_guestbook` VALUES ('2', '123123', '123123@qq.com', null, '0', '', '', '', '第三方士大夫撒旦法', '2016-02-28 12:45:31', '1');
+INSERT INTO `cmf_guestbook` VALUES ('4', '123123', '12@qq.com', null, '12', '', '', '', '沙发上对方的身份', '2016-02-28 13:21:49', '1');
+INSERT INTO `cmf_guestbook` VALUES ('5', '12213', 'sd@qq.com', null, '15', '', '', '', 'sdfsdf', '2016-02-28 17:27:43', '1');
+INSERT INTO `cmf_guestbook` VALUES ('6', 'dsf', '111@qq.com', null, '23', '', '', '', 'refsdf', '2016-02-28 18:11:11', '1');
+INSERT INTO `cmf_guestbook` VALUES ('7', '21312', '123123@qq.com', null, '124', '', '', '', '啥的发送到', '2016-02-28 18:20:42', '1');
+INSERT INTO `cmf_guestbook` VALUES ('8', '123', '11@qq.com', null, '55', '', '', '', '啥的发送到', '2016-02-28 18:24:08', '1');
+INSERT INTO `cmf_guestbook` VALUES ('9', '1212', '2@qq.com', null, '88', '', '', '', '水电费水电费', '2016-02-28 18:36:02', '1');
+INSERT INTO `cmf_guestbook` VALUES ('10', '123123', '11@qq.com', null, '123', 'on', '', '男', '123213', '2016-02-28 21:33:52', '1');
+INSERT INTO `cmf_guestbook` VALUES ('11', '23213', '123@qq.com', null, '44', 'on', '', '女', 'fdssdf', '2016-02-28 21:34:43', '1');
+INSERT INTO `cmf_guestbook` VALUES ('12', 'sdfdf', '11@qq.com', null, '123', 'on', '本科', '女', 'dsfsdf', '2016-02-28 21:35:41', '1');
+INSERT INTO `cmf_guestbook` VALUES ('13', '123123', '213@qq.com', null, '123', 'on', '研究生', '女', 'dsfdsf', '2016-02-28 21:38:15', '1');
+INSERT INTO `cmf_guestbook` VALUES ('14', '1231213', '12312@qq.com', null, '12', '程序员', '研究生', '女', '123', '2016-02-28 21:41:10', '1');
+INSERT INTO `cmf_guestbook` VALUES ('15', '123213', '1213@qq.com', null, '66', '', '本科', '男', 'sdfsdf', '2016-02-28 21:42:26', '1');
+INSERT INTO `cmf_guestbook` VALUES ('16', '123', '11@qq.com', null, '22', '', '大专', '男', '的沙发水电费', '2016-02-28 22:00:03', '1');
+INSERT INTO `cmf_guestbook` VALUES ('17', '123', '12@qq.com', null, '88', '', '大专', '女', '水电费水电费', '2016-02-28 22:13:11', '1');
+INSERT INTO `cmf_guestbook` VALUES ('18', '测试', '12@qq.com', null, '44', '', '本科', '男', '水电费水电费', '2016-02-28 22:14:09', '1');
 
 -- ----------------------------
 -- Table structure for cmf_links
