@@ -58,16 +58,32 @@ img {
 					<div class="row">
 						<div class="span3">
 							<div class="form-group">
-								<label>性别</label> <input type="radio" class="span3"  name="sex" value="男">男
-								<input type="radio" class="span3" name="sex" value="女">女
-
-								<?php dump(I('post.sex')) ?>
-								<?php dump(I('sex')) ?>
+								<label>性别</label> <input type="radio" class="span2"  name="sex" value="男" checked>男
+								<input type="radio" class="span2" name="sex" value="女">女
 							</div>
 						</div>
 						<div class="span3">
 							<div class="form-group">
 								<label>年龄</label> <input type="text" class="span3" placeholder="Your age" name="age">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="span3">
+							<div class="form-group">
+								<label>学历</label> 
+								<select name="degree">
+									 <option value="大专">大专</option>
+									 <option value="本科">本科</option>
+									 <option value="研究生">研究生</option>
+								</select>
+							</div>
+						</div>
+						<div class="span3">
+							<div class="form-group">
+								<label>职位</label> <input type="checkbox" class="span2" name="job[]" value="公务员">公务员
+								<input type="checkbox" class="span2" name="job[]" value="程序员">程序员
+								<input type="checkbox" class="span2" name="job[]" value="教师">教师
 							</div>
 						</div>
 					</div>

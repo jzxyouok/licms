@@ -20,6 +20,7 @@ class GuestbookController extends AppframeController{
 		}
 		
 		if (IS_POST) {
+			$job = implode(',',I('post.job')); 
 			if ($this->guestbook_model->create()) {
 				$result=$this->guestbook_model->add();
 				if ($result!==false) {
