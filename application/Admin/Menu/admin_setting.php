@@ -6,7 +6,7 @@ return array (
   'data' => '',
   'type' => '0',
   'status' => '1',
-  'name' => '系统设置',
+  'name' => '设置',
   'icon' => 'cogs',
   'remark' => '',
   'listorder' => '0',

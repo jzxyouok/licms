@@ -49,7 +49,7 @@ return array (
   'ADMIN_ROUTE_INDEX' => '路由列表',
   'ADMIN_ROUTE_LISTORDERS' => '路由排序',
   'ADMIN_ROUTE_OPEN' => '路由启用',
-  'ADMIN_SETTING_DEFAULT' => '设置',
+  'ADMIN_SETTING_DEFAULT' => '系统设置',
   'ADMIN_SETTING_PASSWORD' => '修改密码',
   'ADMIN_SETTING_PASSWORD_POST' => '提交修改',
   'ADMIN_SETTING_SITE' => '网站信息',

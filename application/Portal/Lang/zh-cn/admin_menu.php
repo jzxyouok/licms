@@ -15,7 +15,7 @@ return array (
   'PORTAL_ADMINPAGE_RECYCLEBIN' => '页面回收',
   'PORTAL_ADMINPOST_INDEX' => '文章管理',
   'PORTAL_ADMINTERM_INDEX' => '分类管理',
-  'PORTAL_ADMINPAGE_INDEX' => '页面管理',
+  'PORTAL_ADMINPAGE_INDEX' => '单页面管理',
   'PORTAL_ADMINPAGE_ADD' => '添加页面',
   'PORTAL_ADMINPAGE_CLEAN' => '彻底删除',
   'PORTAL_ADMINPAGE_DELETE' => '删除页面',
